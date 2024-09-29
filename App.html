@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man in the Forest - Movie Review</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        /* background-color: #032070; */
+        background-color: rgb(3, 12, 93);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+        color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 800px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 30px;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.7
+        ); /* Adding a semi-transparent background for better readability */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+      }
+
+      .poster {
+        width: 40%;
+        position: relative;
+      }
+
+      .rating-badge {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #f1c40f;
+        color: #1b1b1b;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 50%;
+        padding: 20px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .info {
+        width: 60%;
+        text-align: center; /* Center text within the info section */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .info h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .stars {
+        color: #f1c40f;
+        margin: 10px 0;
+      }
+
+      .metadata {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      .metadata span {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .description {
+        line-height: 1.6;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .review-button {
+        background-color: #f1c40f;
+        color: #1b1b1b;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .review-button:hover {
+        background-color: #e1b30e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="poster">
+        <div class="rating-badge">6.5</div>
+        <img
+          src="./9a81c4144195995.6287c4d87d308.jpg"
+          alt="Man in the Forest Poster"
+        />
+      </div>
+      <div class="info">
+        <h1>Lost in the Forest</h1>
+        <div class="stars">★★★☆☆</div>
+        <div class="metadata">
+          <span>Horror</span>
+          <span>July 16, 2019</span>
+          <span>Duration: 1h49m</span>
+          <span>Director: Paul Nikson</span>
+        </div>
+        <p class="description">
+          The film takes place in the near future, with Earth in the grip of The
+          Blight, an airborne disease that causes food crops to turn to
+          grey-brown powder. It rolls and billows across the land, piling up
+          around houses and cars like the dust-drifts in Andrei Tarkovsky’s
+          Stalker, another film in which the characters slip between time's
+          cogs.
+        </p>
+        <div class="button-container">
+          <button class="review-button">Add Your Review</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
